@@ -62,7 +62,7 @@ const ImageUpload = () => {
 
   return (
     <div className="image-upload">
-      <h1>Upload Image for Text Recognition</h1>
+      <h3>Upload Image for Text Recognition</h3>
       <input type="file" accept="image/*" onChange={handleFileChange} />
       <button onClick={analyzeImage} disabled={loading}>
         {loading ? 'Analyzing...' : 'Analyze Image'}
