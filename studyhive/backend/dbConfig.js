@@ -1,6 +1,6 @@
 const config = {
     user: 'sa',
-    password: '',
+    password: 'YourStrong!Passw0rd',
     server: 'localhost',
     database: 'master'
     ,
