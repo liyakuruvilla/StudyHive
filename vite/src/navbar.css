@@ -3,6 +3,7 @@
     border: 2px solid brown;
     margin-bottom: 20px;
     z-index: 9999;
+    background-color: white;
     overflow: hidden; 
     display: flex; /* Use flexbox */
     justify-content: space-between; /* Distribute items evenly */
