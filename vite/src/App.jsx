@@ -1,26 +1,28 @@
 import { useState } from 'react'
+import axios from 'axios'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Login from './Login'
+import SideBar from './navbar'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <Router>
+      <SideBar />
+      Welcome to StudyHive
+      <div className="page-content">
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          {/* Add other routes here */}
+        </Routes>
       </div>
-      <h1>Vite + React</h1>
-      <Login/>
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;

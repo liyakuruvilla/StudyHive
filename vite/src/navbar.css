@@ -1,0 +1,47 @@
+.navbar {
+    width: 100%;
+    border: 2px solid brown;
+    margin-bottom: 20px;
+    z-index: 9999;
+    overflow: hidden; 
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .links {
+    display: flex; /* Use flexbox */
+    list-style-type: none; /* Remove bullet points */
+  }
+  
+  .logo {
+    width: 85px;
+    height: auto;
+    cursor: pointer;
+    object-fit: contain;
+  }
+  
+  ul li {
+    margin: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .nav-text {
+    text-decoration: none;
+    color: inherit; /* Inherit text color */
+    margin-left: 20px;
+    color: brown;
+  }
+  
+  .nav-text:hover {
+    color: #ffbb77;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .logo { 
+      width: 100px;
+    }
+  }
+  
