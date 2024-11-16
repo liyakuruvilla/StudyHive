@@ -6,22 +6,25 @@ import './App.css'
 import Login from './Login'
 import SideBar from './navbar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import Quiz from './quiz/quiz'
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
+    <div className='container'>
     <Router>
       <SideBar />
       Welcome to StudyHive
       <div className="page-content">
         <Routes>
           <Route path="/login" element={<Login />} />
-          {/* Add other routes here */}
+          <Route path='/quiz' element={<Quiz/>}/>
+
         </Routes>
       </div>
     </Router>
+    </div>
   );
 }
 

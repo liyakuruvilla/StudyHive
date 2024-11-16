@@ -12,6 +12,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.all{
+  width: 100vw;
+  background-image: linear-gradient(#ae5f23, #ffcb64);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 a {
   font-weight: 500;

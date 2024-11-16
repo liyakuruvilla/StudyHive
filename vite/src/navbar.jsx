@@ -12,6 +12,7 @@ const SideBar = () => {
                login</Link>
                <Link to='/home' className='nav-text'>
                home</Link>
+               <Link to='/quiz' className='nav-text'>quiz</Link>
             </li>
         </ul>
       
