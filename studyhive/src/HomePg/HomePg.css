@@ -1,0 +1,16 @@
+.home-container{
+    /* border: 2px solid pink; */
+    /* background-color: blanchedalmond; */
+    padding: 20px;
+    height: 100vh;
+}
+
+.desc{
+    color: brown;
+    /* border: 2px solid; */
+    padding: 20px 100px;
+    color: white;
+}
+.a{
+    background-color: blue;
+}
